@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { Navigate, Outlet, useLocation } from 'react-router-dom'; // CUSTOM DEFINED HOOK
 
-import useAuth from '@/hooks/useAuth';
+import useAuth from '@/spsda/hooks/useAuth';
 export default function GuestGuard({
   children
 }) {

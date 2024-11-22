@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'; // CUSTOM DEFINED HOOK
 
-import useAuth from '@/hooks/useAuth'; // CUSTOM COMPONENTS
+import useAuth from '@/spsda/hooks/useAuth'; // CUSTOM COMPONENTS
 
 import ErrorView from '@/page-sections/permission/ErrorView'; // ==============================================================
 
