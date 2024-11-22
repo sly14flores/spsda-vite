@@ -9,7 +9,7 @@ const ErrorPage = Loadable(lazy(() => import('@/pages/404'))); // LANDING / INIT
 const Landing = Loadable(lazy(() => import('@/pages/landing')));
 
 // SPSDA
-const AppLanding = Loadable(lazy(() => import('@/spsda-pages/landing')));
+const AppLanding = Loadable(lazy(() => import('@/spsda/pages/landing')));
 import approutes from './spsda/routes';
 
 export const routes = () => {
