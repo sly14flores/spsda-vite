@@ -8,11 +8,18 @@ import { ComponentRoutes } from './components'; // GLOBAL ERROR PAGE
 const ErrorPage = Loadable(lazy(() => import('@/pages/404'))); // LANDING / INITIAL PAGE
 const Landing = Loadable(lazy(() => import('@/pages/landing')));
 
+// SPSDA
+const AppLanding = Loadable(lazy(() => import('@/spsda-pages/landing')));
+import approutes from './spsda/routes';
+
 export const routes = () => {
   return [
     {
       path: '/',
-      element: <>Hello, World</>
+      element: <AppLanding />,
+      children: [
+        ...approutes,
+      ]
     },
     { // Demo Pages
       path: '/demo',
