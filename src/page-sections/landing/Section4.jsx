@@ -37,7 +37,7 @@ export default function Section4() {
               Save thousands of development hours with Uko’s well crafted features and clean code
             </Paragraph>
 
-            <Button color="secondary" variant="outlined" startIcon={<KeyboardTab />} onClick={() => navigate('/dashboard/product-list')}>
+            <Button color="secondary" variant="outlined" startIcon={<KeyboardTab />} onClick={() => navigate('/demo/dashboard/product-list')}>
               Browse pages & apps
             </Button>
           </Box>

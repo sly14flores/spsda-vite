@@ -55,7 +55,7 @@ export default function Section3() {
               Save thousands of development hours with Uko’s well crafted features and clean code
             </Paragraph>
 
-            <Button color="secondary" variant="outlined" startIcon={<KeyboardTab />} onClick={() => navigate('/components')}>
+            <Button color="secondary" variant="outlined" startIcon={<KeyboardTab />} onClick={() => navigate('/demo/components')}>
               Browse components
             </Button>
           </Box>

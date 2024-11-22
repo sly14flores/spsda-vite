@@ -128,7 +128,7 @@ export default function RegisterView() {
           </Paragraph>
         </Divider>
 
-        <Button fullWidth variant="text" onClick={() => navigate('/amplify/login')} sx={{
+        <Button fullWidth variant="text" onClick={() => navigate('/demo/amplify/login')} sx={{
         backgroundColor: 'primary.50'
       }}>
           Log In

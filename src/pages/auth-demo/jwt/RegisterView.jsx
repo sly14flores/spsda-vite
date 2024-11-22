@@ -126,7 +126,7 @@ export default function RegisterView() {
           </Paragraph>
         </Divider>
 
-        <Button fullWidth variant="text" onClick={() => navigate('/jwt/login')} sx={{
+        <Button fullWidth variant="text" onClick={() => navigate('/demo/jwt/login')} sx={{
         backgroundColor: 'primary.50'
       }}>
           Log In

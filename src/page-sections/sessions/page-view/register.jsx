@@ -43,7 +43,7 @@ export default function RegisterPageView() {
     onSubmit: async values => {
       try {
         await createUserWithEmail(values.email, values.password);
-        navigate('/');
+        navigate('/demo');
       } catch (error) {
         console.log(error.message);
       }
@@ -94,7 +94,7 @@ export default function RegisterPageView() {
           Already have an account?
         </Divider>
 
-        <Button fullWidth variant="text" onClick={() => navigate('/login')} sx={{
+        <Button fullWidth variant="text" onClick={() => navigate('/demo/login')} sx={{
         backgroundColor: 'primary.50'
       }}>
           Log In

@@ -21,7 +21,7 @@ export default function UserPermissionView() {
           <img src="/static/pages/error.svg" alt="error" width="100%" />
         </Box>
 
-        <Button onClick={() => navigate('/')}>Go Home</Button>
+        <Button onClick={() => navigate('/demo')}>Go Home</Button>
       </Box>
     </Container>;
 }

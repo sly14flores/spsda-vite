@@ -70,7 +70,7 @@ export default function InvoiceTableRow(props) {
         <TableMoreMenu open={openMenuEl} handleOpen={handleOpenMenu} handleClose={handleCloseOpenMenu}>
           <TableMoreMenuItem title="View" Icon={RemoveRedEye} handleClick={() => {
           handleCloseOpenMenu();
-          navigate('/dashboard/invoice-details');
+          navigate('/demo/dashboard/invoice-details');
         }} />
           <TableMoreMenuItem title="Delete" Icon={DeleteOutline} handleClick={() => {
           handleCloseOpenMenu();

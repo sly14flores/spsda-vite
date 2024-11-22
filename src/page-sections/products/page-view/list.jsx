@@ -89,7 +89,7 @@ export default function ProductListPageView() {
           <Tab disableRipple label="Out of Stock" value="out-of-stock" />
         </Tabs>
 
-        <Button variant="contained" startIcon={<Add />} onClick={() => navigate('/dashboard/create-product')}>
+        <Button variant="contained" startIcon={<Add />} onClick={() => navigate('/demo/dashboard/create-product')}>
           Add Product
         </Button>
       </ListWrapper>

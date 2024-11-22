@@ -64,7 +64,7 @@ export default function UserTableRow(props) {
         <TableMoreMenu open={openMenuEl} handleOpen={handleOpenMenu} handleClose={handleCloseOpenMenu}>
           <TableMoreMenuItem Icon={Edit} title="Edit" handleClick={() => {
           handleCloseOpenMenu();
-          navigate('/dashboard/add-user');
+          navigate('/demo/dashboard/add-user');
         }} />
 
           <TableMoreMenuItem Icon={DeleteOutline} title="Delete" handleClick={() => {

@@ -76,7 +76,7 @@ export default function Navigation() {
   }, [isMedium]); // FOR LARGE SCREEN DEVICE
 
   const LARGE_DEVICE_CONTENT = <StyledNav>
-      <StyledNavItem href="/" isActive={isActive('/')} isDark={isComponentsRoute}>
+      <StyledNavItem href="/demo" isActive={isActive('/demo')} isDark={isComponentsRoute}>
         Home
       </StyledNavItem>
 
@@ -85,7 +85,7 @@ export default function Navigation() {
     }
       <MegaMenu isDark={isComponentsRoute} />
 
-      <StyledNavItem href="/components" isDark={isComponentsRoute} isActive={isActive('/components')}>
+      <StyledNavItem href="/demo/components" isDark={isComponentsRoute} isActive={isActive('/components')}>
         Components
       </StyledNavItem>
 
@@ -110,7 +110,7 @@ export default function Navigation() {
             </ListItem>
 
             <ListItem disablePadding>
-              <ListItemButton LinkComponent={Link} href="/">
+              <ListItemButton LinkComponent={Link} href="/demo/">
                 Home
               </ListItemButton>
             </ListItem>
@@ -144,7 +144,7 @@ export default function Navigation() {
             </ListItem>
 
             <ListItem disablePadding>
-              <ListItemButton LinkComponent={Link} href="/components">
+              <ListItemButton LinkComponent={Link} href="/demo/components">
                 Components
               </ListItemButton>
             </ListItem>
@@ -176,7 +176,7 @@ export default function Navigation() {
       {
       /* UKO LOGO */
     }
-      <Link href="/">
+      <Link href="/demo/">
         <img src="/static/logo/logo-svg.svg" alt="logo" width={35} height={35} />
       </Link>
 

@@ -11,7 +11,7 @@ export default function AuthGuard({
     isAuthenticated
   } = useAuth();
   if (isAuthenticated) return <>{children}</>;
-  return <Navigate replace to="/login" state={{
+  return <Navigate replace to="/demo/login" state={{
     from: pathname
   }} />;
 }

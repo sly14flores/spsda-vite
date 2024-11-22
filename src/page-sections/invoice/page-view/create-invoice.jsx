@@ -24,7 +24,7 @@ import { StatusWrapper, StyledFormControl } from '../styles';
 export default function CreateInvoicePageView() {
   const navigate = useNavigate();
 
-  const handleCancel = () => navigate('/dashboard/invoice-list');
+  const handleCancel = () => navigate('/demo/dashboard/invoice-list');
 
   const initialValues = {
     orderNo: 204,

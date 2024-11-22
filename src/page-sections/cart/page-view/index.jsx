@@ -43,7 +43,7 @@ export default function CartPageView() {
           md: 4,
           xs: 12
         }}>
-            <OrderSummery showCoupon buttonText="Check Out Now" handleClick={() => navigate('/dashboards/billing-address')} />
+            <OrderSummery showCoupon buttonText="Check Out Now" handleClick={() => navigate('/demo/dashboards/billing-address')} />
           </Grid>
         </Grid>
       </StyledContainer>

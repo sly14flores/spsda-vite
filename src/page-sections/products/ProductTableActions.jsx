@@ -65,7 +65,7 @@ export default function ProductTableActions({
           <FormatBullets color="primary" />
         </IconButton>
 
-        <IconButton onClick={() => navigate('/dashboard/product-grid')}>
+        <IconButton onClick={() => navigate('/demo/dashboard/product-grid')}>
           <Apps />
         </IconButton>
       </div>

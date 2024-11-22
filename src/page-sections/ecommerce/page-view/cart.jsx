@@ -139,7 +139,7 @@ export default function CartPageView() {
           </Card>
 
           <Box mt={2}>
-            <Button disableRipple variant="text" startIcon={<ChevronLeft />} onClick={() => navigate('/dashboards/shop')}>
+            <Button disableRipple variant="text" startIcon={<ChevronLeft />} onClick={() => navigate('/demo/dashboards/shop')}>
               Continue Shopping
             </Button>
           </Box>
@@ -152,7 +152,7 @@ export default function CartPageView() {
         md: 4,
         xs: 12
       }}>
-          <OrderSummery showCoupon buttonText="Check Out Now" handleClick={() => navigate('/dashboards/billing-address')} />
+          <OrderSummery showCoupon buttonText="Check Out Now" handleClick={() => navigate('/demo/dashboards/billing-address')} />
         </Grid>
       </Grid>
     </div>;

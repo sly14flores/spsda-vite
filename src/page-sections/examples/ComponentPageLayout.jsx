@@ -34,7 +34,7 @@ export default function ComponentPageLayout({
             {title}
           </H6>
 
-          <Button onClick={() => navigate('/components')} startIcon={<KeyboardBackspace fontSize="small" />} sx={{
+          <Button onClick={() => navigate('/demo/components')} startIcon={<KeyboardBackspace fontSize="small" />} sx={{
           mr: 2
         }}>
             Go Back

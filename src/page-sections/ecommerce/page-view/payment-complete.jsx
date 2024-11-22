@@ -40,7 +40,7 @@ export default function PaymentCompletePageView() {
       }} />
 
         <FlexBox gap={2} flexWrap="wrap">
-          <Button color="secondary" variant="outlined" fullWidth={down500} startIcon={<ChevronLeft />} onClick={() => navigate('/dashboard/shop')}>
+          <Button color="secondary" variant="outlined" fullWidth={down500} startIcon={<ChevronLeft />} onClick={() => navigate('/demo/dashboard/shop')}>
             Continue Shopping
           </Button>
 

@@ -4,43 +4,43 @@ export const PAGES_MENUS = [{
   child: [{
     id: 1,
     title: 'Analytics',
-    href: '/dashboard'
+    href: '/demo/dashboard'
   }, {
     id: 10,
     title: 'Analytics 2',
-    href: '/dashboard/analytics-2'
+    href: '/demo/dashboard/analytics-2'
   }, {
     id: 2,
     title: 'Finance',
-    href: '/dashboard/finance'
+    href: '/demo/dashboard/finance'
   }, {
     id: 3,
     title: 'Ecommerce',
-    href: '/dashboard/ecommerce'
+    href: '/demo/dashboard/ecommerce'
   }, {
     id: 4,
     title: 'Crm',
-    href: '/dashboard/crm'
+    href: '/demo/dashboard/crm'
   }, {
     id: 5,
     title: 'Marketing',
-    href: '/dashboard/logistics'
+    href: '/demo/dashboard/logistics'
   }, {
     id: 6,
     title: 'Logistics',
-    href: '/dashboard/marketing'
+    href: '/demo/dashboard/marketing'
   }, {
     id: 7,
     title: 'Sales',
-    href: '/dashboard/sales'
+    href: '/demo/dashboard/sales'
   }, {
     id: 8,
     title: 'LMS',
-    href: '/dashboard/learning-management'
+    href: '/demo/dashboard/learning-management'
   }, {
     id: 9,
     title: 'Job Management',
-    href: '/dashboard/job-management'
+    href: '/demo/dashboard/job-management'
   }]
 }, {
   id: 2,
@@ -48,43 +48,43 @@ export const PAGES_MENUS = [{
   child: [{
     id: 1,
     title: 'About Us',
-    href: '/about-us'
+    href: '/demo/about-us'
   }, {
     id: 2,
     title: 'Contact Us',
-    href: '/contact-us'
+    href: '/demo/contact-us'
   }, {
     id: 3,
     title: 'FAQs',
-    href: '/faqs'
+    href: '/demo/faqs'
   }, {
     id: 4,
     title: 'Pricing',
-    href: '/pricing'
+    href: '/demo/pricing'
   }, {
     id: 5,
     title: 'Career',
-    href: '/career'
+    href: '/demo/career'
   }, {
     id: 6,
     title: 'Job Details',
-    href: '/career/designer'
+    href: '/demo/career/designer'
   }, {
     id: 7,
     title: 'Apply Job',
-    href: '/career/apply'
+    href: '/demo/career/apply'
   }, {
     id: 8,
     title: 'Shop',
-    href: '/products'
+    href: '/demo/products'
   }, {
     id: 9,
     title: 'Checkout',
-    href: '/checkout'
+    href: '/demo/checkout'
   }, {
     id: 10,
     title: 'Cart',
-    href: '/cart'
+    href: '/demo/cart'
   }]
 }, {
   id: 3,
@@ -92,30 +92,30 @@ export const PAGES_MENUS = [{
   child: [{
     id: 1,
     title: 'Login',
-    href: '/login'
+    href: '/demo/login'
   }, {
     id: 2,
     title: 'Register',
-    href: '/register'
+    href: '/demo/register'
   }, {
     id: 4,
     title: 'Forget Password',
-    href: '/forget-password'
+    href: '/demo/forget-password'
   }, {
     id: 5,
     title: 'Verify OTP Code',
-    href: '/verify-code'
+    href: '/demo/verify-code'
   }, {
     id: 3,
     title: 'Not Found',
-    href: '/abc'
+    href: '/demo/abc'
   }, {
     id: 6,
     title: 'Coming Soon',
-    href: '/coming-soon'
+    href: '/demo/coming-soon'
   }, {
     id: 7,
     title: 'Maintenance',
-    href: '/maintenance'
+    href: '/demo/maintenance'
   }]
 }];

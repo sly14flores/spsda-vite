@@ -5,210 +5,210 @@ export const navigation = [{
   Icon: duotone.PersonChalkboard,
   children: [{
     name: 'Analytics 1',
-    path: '/dashboard'
+    path: '/demo/dashboard'
   }, {
     name: 'Analytics 2',
-    path: '/dashboard/analytics-2'
+    path: '/demo/dashboard/analytics-2'
   }, {
     name: 'CRM 1',
-    path: '/dashboard/crm'
+    path: '/demo/dashboard/crm'
   }, {
     name: 'CRM 2',
-    path: '/dashboard/crm-2'
+    path: '/demo/dashboard/crm-2'
   }, {
     name: 'Sales 1',
-    path: '/dashboard/sales'
+    path: '/demo/dashboard/sales'
   }, {
     name: 'Sales 2',
-    path: '/dashboard/sales-2'
+    path: '/demo/dashboard/sales-2'
   }, {
     name: 'Finance 1',
-    path: '/dashboard/finance'
+    path: '/demo/dashboard/finance'
   }, {
     name: 'Finance 2',
-    path: '/dashboard/finance-2'
+    path: '/demo/dashboard/finance-2'
   }, {
     name: 'Ecommerce',
-    path: '/dashboard/ecommerce'
+    path: '/demo/dashboard/ecommerce'
   }, {
     name: 'Logistics',
-    path: '/dashboard/logistics'
+    path: '/demo/dashboard/logistics'
   }, {
     name: 'Marketing',
-    path: '/dashboard/marketing'
+    path: '/demo/dashboard/marketing'
   }, {
     name: 'LMS',
-    path: '/dashboard/learning-management'
+    path: '/demo/dashboard/learning-management'
   }, {
     name: 'Job Management',
-    path: '/dashboard/job-management'
+    path: '/demo/dashboard/job-management'
   }]
 }, {
   name: 'Profile',
   Icon: duotone.UserProfile,
-  path: '/dashboard/profile'
+  path: '/demo/dashboard/profile'
 }, {
   name: 'Account',
   Icon: duotone.Accounts,
-  path: '/dashboard/account'
+  path: '/demo/dashboard/account'
 }, {
   name: 'Users',
   Icon: duotone.UserList,
   children: [{
     name: 'Add User',
-    path: '/dashboard/add-user'
+    path: '/demo/dashboard/add-user'
   }, {
     name: 'User List 1',
-    path: '/dashboard/user-list'
+    path: '/demo/dashboard/user-list'
   }, {
     name: 'User Grid 1',
-    path: '/dashboard/user-grid'
+    path: '/demo/dashboard/user-grid'
   }, {
     name: 'User List 2',
-    path: '/dashboard/user-list-2'
+    path: '/demo/dashboard/user-list-2'
   }, {
     name: 'User Grid 2',
-    path: '/dashboard/user-grid-2'
+    path: '/demo/dashboard/user-grid-2'
   }]
 }, {
   name: 'Products',
   Icon: duotone.AdminEcommerce,
   children: [{
     name: 'Product List',
-    path: '/dashboard/product-list'
+    path: '/demo/dashboard/product-list'
   }, {
     name: 'Product Grid',
-    path: '/dashboard/product-grid'
+    path: '/demo/dashboard/product-grid'
   }, {
     name: 'Create Product',
-    path: '/dashboard/create-product'
+    path: '/demo/dashboard/create-product'
   }, {
     name: 'Product Details',
-    path: '/dashboard/product-details'
+    path: '/demo/dashboard/product-details'
   }]
 }, {
   name: 'Invoice',
   Icon: duotone.Invoice,
   children: [{
     name: 'Invoice List',
-    path: '/dashboard/invoice-list'
+    path: '/demo/dashboard/invoice-list'
   }, {
     name: 'Invoice Details',
-    path: '/dashboard/invoice-details'
+    path: '/demo/dashboard/invoice-details'
   }, {
     name: 'Create Invoice',
-    path: '/dashboard/create-invoice'
+    path: '/demo/dashboard/create-invoice'
   }]
 }, {
   name: 'Ecommerce',
   Icon: duotone.Ecommerce,
   children: [{
     name: 'Cart',
-    path: '/dashboard/cart'
+    path: '/demo/dashboard/cart'
   }, {
     name: 'Payment',
-    path: '/dashboard/payment'
+    path: '/demo/dashboard/payment'
   }, {
     name: 'Billing Address',
-    path: '/dashboard/billing-address'
+    path: '/demo/dashboard/billing-address'
   }, {
     name: 'Payment Complete',
-    path: '/dashboard/payment-complete'
+    path: '/demo/dashboard/payment-complete'
   }]
 }, {
   name: 'Projects',
   Icon: duotone.ProjectChart,
   children: [{
     name: 'Project 1',
-    path: '/dashboard/projects/version-1'
+    path: '/demo/dashboard/projects/version-1'
   }, {
     name: 'Project 2',
-    path: '/dashboard/projects/version-2'
+    path: '/demo/dashboard/projects/version-2'
   }, {
     name: 'Project 3',
-    path: '/dashboard/projects/version-3'
+    path: '/demo/dashboard/projects/version-3'
   }, {
     name: 'Project Details',
-    path: '/dashboard/projects/details'
+    path: '/demo/dashboard/projects/details'
   }, {
     name: 'Team Member',
-    path: '/dashboard/projects/team-member'
+    path: '/demo/dashboard/projects/team-member'
   }]
 }, {
   name: 'Data Table',
   Icon: duotone.DataTable,
   children: [{
     name: 'Data Table 1',
-    path: '/dashboard/data-table-1'
+    path: '/demo/dashboard/data-table-1'
   }]
 }, {
   name: 'Todo List',
   Icon: duotone.TodoList,
-  path: '/dashboard/todo-list'
+  path: '/demo/dashboard/todo-list'
 }, {
   name: 'Chats',
   Icon: duotone.Chat,
-  path: '/dashboard/chat'
+  path: '/demo/dashboard/chat'
 }, {
   name: 'Email',
   Icon: duotone.Inbox,
   children: [{
     name: 'Inbox',
-    path: '/dashboard/mail/all'
+    path: '/demo/dashboard/mail/all'
   }, {
     name: 'Email Details',
-    path: '/dashboard/mail/details'
+    path: '/demo/dashboard/mail/details'
   }, {
     name: 'Create Email',
-    path: '/dashboard/mail/compose'
+    path: '/demo/dashboard/mail/compose'
   }]
 }, {
   name: 'Pages',
   Icon: duotone.Pages,
   children: [{
     name: 'About (Admin)',
-    path: '/dashboard/about'
+    path: '/demo/dashboard/about'
   }, {
     name: 'About (Public)',
-    path: '/about-us'
+    path: '/demo/about-us'
   }, {
     name: 'Career (Admin)',
-    path: '/dashboard/career'
+    path: '/demo/dashboard/career'
   }, {
     name: 'Career (Public)',
-    path: '/career'
+    path: '/demo/career'
   }, {
     name: 'Job Details',
-    path: '/career/designer'
+    path: '/demo/career/designer'
   }, {
     name: 'Job Apply',
-    path: '/career/apply'
+    path: '/demo/career/apply'
   }, {
     name: 'Shop',
-    path: '/products'
+    path: '/demo/products'
   }, {
     name: 'Product Details',
-    path: '/products/Wu4GdphiI0F48eMQZ_zBJ'
+    path: '/demo/products/Wu4GdphiI0F48eMQZ_zBJ'
   }, {
     name: 'Cart',
-    path: '/cart'
+    path: '/demo/cart'
   }, {
     name: 'Checkout',
-    path: '/checkout'
+    path: '/demo/checkout'
   }, {
     name: 'Faq',
-    path: '/faqs'
+    path: '/demo/faqs'
   }, {
     name: 'Pricing',
-    path: '/pricing'
+    path: '/demo/pricing'
   }, {
     name: 'Support',
-    path: '/dashboard/support'
+    path: '/demo/dashboard/support'
   }, {
     name: 'Create Ticket',
-    path: '/dashboard/create-ticket'
+    path: '/demo/dashboard/create-ticket'
   }, {
     name: 'File Manager',
-    path: '/dashboard/file-manager'
+    path: '/demo/dashboard/file-manager'
   }]
 }];

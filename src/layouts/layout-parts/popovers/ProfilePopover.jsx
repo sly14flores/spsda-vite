@@ -72,15 +72,15 @@ export default function ProfilePopover() {
             </div>
           </FlexBox>}>
         <Box pt={1}>
-          <StyledSmall onClick={handleMenuItem('/dashboard/profile')}>Set Status</StyledSmall>
+          <StyledSmall onClick={handleMenuItem('/demo/dashboard/profile')}>Set Status</StyledSmall>
 
-          <StyledSmall onClick={handleMenuItem('/dashboard/profile')}>
+          <StyledSmall onClick={handleMenuItem('/demo/dashboard/profile')}>
             Profile & Account
           </StyledSmall>
 
-          <StyledSmall onClick={handleMenuItem('/dashboard/account')}>Settings</StyledSmall>
+          <StyledSmall onClick={handleMenuItem('/demo/dashboard/account')}>Settings</StyledSmall>
 
-          <StyledSmall onClick={handleMenuItem('/dashboard/profile')}>Manage Team</StyledSmall>
+          <StyledSmall onClick={handleMenuItem('/demo/dashboard/profile')}>Manage Team</StyledSmall>
 
           <Divider sx={{
           my: 1

@@ -27,7 +27,7 @@ export default function AllMailPageView() {
     }
       {Array.from({
       length: 10
-    }).map((item, i) => <MailItem key={i} onClick={() => navigate('/dashboard/mail/details')}>
+    }).map((item, i) => <MailItem key={i} onClick={() => navigate('/demo/dashboard/mail/details')}>
           <FlexBox alignItems="center" gap={2}>
             {upSm && <Checkbox size="small" sx={{
           p: 0

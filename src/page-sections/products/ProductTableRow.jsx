@@ -77,11 +77,11 @@ export default function ProductTableRow({
         <TableMoreMenu open={openMenuEl} handleOpen={handleOpenMenu} handleClose={handleCloseOpenMenu}>
           <TableMoreMenuItem Icon={RemoveRedEye} title="View" handleClick={() => {
           handleCloseOpenMenu();
-          navigate('/dashboard/product-details');
+          navigate('/demo/dashboard/product-details');
         }} />
           <TableMoreMenuItem Icon={Edit} title="Edit" handleClick={() => {
           handleCloseOpenMenu();
-          navigate('/dashboard/create-product');
+          navigate('/demo/dashboard/create-product');
         }} />
           <TableMoreMenuItem Icon={DeleteOutline} title="Delete" handleClick={() => {
           handleCloseOpenMenu();

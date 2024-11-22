@@ -127,7 +127,7 @@ export default function RegisterView() {
           </Paragraph>
         </Divider>
 
-        <Button fullWidth variant="text" onClick={() => navigate('/firebase/login')} sx={{
+        <Button fullWidth variant="text" onClick={() => navigate('/demo/firebase/login')} sx={{
         backgroundColor: 'primary.50'
       }}>
           Log In

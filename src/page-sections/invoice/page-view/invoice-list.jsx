@@ -83,7 +83,7 @@ export default function InvoiceListPageView() {
           <H5 fontSize={16}>Invoice List</H5>
         </Stack>
 
-        <Button variant="contained" startIcon={<Add />} onClick={() => navigate('/dashboard/create-invoice')}>
+        <Button variant="contained" startIcon={<Add />} onClick={() => navigate('/demo/dashboard/create-invoice')}>
           Add New Invoice
         </Button>
       </FlexBetween>

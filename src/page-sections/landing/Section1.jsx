@@ -91,14 +91,14 @@ export default function Section1() {
           </Paragraph>
 
           <Stack mt={6} direction="row" gap={2} alignItems="center" justifyContent="center">
-            <Button onClick={() => navigate('/components')} sx={{
+            <Button onClick={() => navigate('/demo/components')} sx={{
             paddingInline: 3,
             paddingBlock: 1
           }}>
               Browse Components
             </Button>
 
-            <Button variant="outlined" onClick={() => navigate('/dashboard/ecommerce')} sx={{
+            <Button variant="outlined" onClick={() => navigate('/demo/dashboard/ecommerce')} sx={{
             paddingInline: 3,
             paddingBlock: 1
           }}>

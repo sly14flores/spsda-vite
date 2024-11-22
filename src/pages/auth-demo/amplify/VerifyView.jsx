@@ -36,7 +36,7 @@ export default function VerifyView() {
 
       if (email && otp) {
         await emailVerify(email, otp);
-        navigate('/amplify/login');
+        navigate('/demo/amplify/login');
       }
 
       setLoading(false);

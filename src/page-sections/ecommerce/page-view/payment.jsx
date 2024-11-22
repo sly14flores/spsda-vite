@@ -122,7 +122,7 @@ export default function PaymentPageView() {
           </Card>
 
           <Box mt={2}>
-            <Button disableRipple variant="text" startIcon={<ChevronLeft />} onClick={() => navigate('/dashboard/billing-address')}>
+            <Button disableRipple variant="text" startIcon={<ChevronLeft />} onClick={() => navigate('/demo/dashboard/billing-address')}>
               Back
             </Button>
           </Box>
@@ -159,7 +159,7 @@ export default function PaymentPageView() {
             </Paragraph>
           </Card>
 
-          <OrderSummery buttonText="Place Order" handleClick={() => navigate('/dashboard/payment-complete')} />
+          <OrderSummery buttonText="Place Order" handleClick={() => navigate('/demo/dashboard/payment-complete')} />
         </Grid>
       </Grid>
     </div>;

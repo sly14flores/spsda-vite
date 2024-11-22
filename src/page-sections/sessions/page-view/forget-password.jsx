@@ -28,7 +28,7 @@ export default function ForgetPasswordPageView() {
 
             <Button fullWidth>Send Link</Button>
 
-            <Button disableRipple variant="text" color="secondary" onClick={() => navigate('/login')}>
+            <Button disableRipple variant="text" color="secondary" onClick={() => navigate('/demo/login')}>
               <NavigateBefore fontSize="small" /> Back to Sign In
             </Button>
           </Stack>

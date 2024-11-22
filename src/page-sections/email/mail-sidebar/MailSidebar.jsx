@@ -27,7 +27,7 @@ export default function MailSidebar({
 
 
   const CONTENT = <>
-      <Button fullWidth startIcon={<Create />} onClick={handleNavigate('/dashboard/mail/compose')}>
+      <Button fullWidth startIcon={<Create />} onClick={handleNavigate('/demo/dashboard/mail/compose')}>
         Compose
       </Button>
 

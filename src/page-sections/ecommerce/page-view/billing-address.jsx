@@ -63,7 +63,7 @@ export default function BillingAddressPageView() {
           </Stack>
 
           <Box mt={2}>
-            <Button disableRipple variant="text" startIcon={<ChevronLeft />} onClick={() => navigate('/dashboard/cart')}>
+            <Button disableRipple variant="text" startIcon={<ChevronLeft />} onClick={() => navigate('/demo/dashboard/cart')}>
               Back
             </Button>
           </Box>
@@ -76,7 +76,7 @@ export default function BillingAddressPageView() {
         md: 4,
         xs: 12
       }}>
-          <OrderSummery buttonText="Payment" handleClick={() => navigate('/dashboard/payment')} />
+          <OrderSummery buttonText="Payment" handleClick={() => navigate('/demo/dashboard/payment')} />
         </Grid>
       </Grid>
     </div>;
