@@ -76,7 +76,8 @@ const ActiveLayout = () => {
   return settings.activeLayout === 'layout2' ? <LayoutV2 /> : <LayoutV1 />;
 };
 
-export const DashboardRoutes = [{
+export const DashboardRoutes = [
+  {
   path: 'dashboard',
   element: <AuthGuard>
         <ActiveLayout />
