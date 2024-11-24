@@ -4,7 +4,6 @@ import { useFormik } from 'formik'; // MUI
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid2';
-import Divider from '@mui/material/Divider';
 import Checkbox from '@mui/material/Checkbox';
 import TextField from '@mui/material/TextField';
 import ButtonBase from '@mui/material/ButtonBase';
@@ -21,10 +20,6 @@ import Layout from './Layout'; // CUSTOM COMPONENTS
 import Link from '@/components/link';
 import { H5, H6, Paragraph } from '@/components/typography';
 import { FlexBetween, FlexBox } from '@/components/flexbox'; // CUSTOM ICON COMPONENTS
-
-import Twitter from '@/icons/social/Twitter';
-import Facebook from '@/icons/social/Facebook';
-import GoogleIcon from '@/icons/GoogleIcon'; // STYLED COMPONENT
 
 const StyledButton = styled(ButtonBase)(({
   theme
@@ -79,17 +74,10 @@ export default function LoginPageView() {
         xs: 25
       }}>Sign In</H5>
 
-        <Paragraph mt={1} mb={6} color="text.secondary">
-          New user?{' '}
-          <Box fontWeight={500} component={Link} href="/register">
-            Create an Account
-          </Box>
-        </Paragraph>
-
         <form onSubmit={handleSubmit}>
           <Grid container spacing={2}>
             <Grid size={12}>
-              <H6 fontSize={16} mb={1.5}>
+              <H6 fontSize={16} mt={1} mb={4}>
                 Login with your email id
               </H6>
 
@@ -113,7 +101,7 @@ export default function LoginPageView() {
                   <Paragraph fontWeight={500}>Remember me</Paragraph>
                 </FlexBox>
 
-                <Box fontSize={13} component={Link} fontWeight={500} color="error.500" href="/forget-password">
+                <Box fontSize={13} component={Link} fontWeight={500} color="error.500" href="/forgot-password">
                   Forget Password?
                 </Box>
               </FlexBetween>
@@ -127,33 +115,6 @@ export default function LoginPageView() {
           </Grid>
         </form>
 
-        <Divider sx={{
-        my: 4,
-        color: 'text.secondary',
-        fontSize: 13
-      }}>OR</Divider>
-
-        <FlexBox justifyContent="center" flexWrap="wrap" gap={2}>
-          <StyledButton onClick={handleGoogle}>
-            <GoogleIcon sx={{
-            fontSize: 18
-          }} />
-          </StyledButton>
-
-          <StyledButton>
-            <Facebook sx={{
-            color: '#2475EF',
-            fontSize: 18
-          }} />
-          </StyledButton>
-
-          <StyledButton>
-            <Twitter sx={{
-            color: '#45ABF7',
-            fontSize: 18
-          }} />
-          </StyledButton>
-        </FlexBox>
       </Box>
     </Layout>;
 }
