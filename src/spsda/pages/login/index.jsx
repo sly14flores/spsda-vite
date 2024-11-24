@@ -35,10 +35,6 @@ export default function LoginPageView() {
     signInWithGoogle
   } = useAuth();
 
-  const handleGoogle = async () => {
-    await signInWithGoogle();
-  };
-
   const initialValues = {
     email: 'jason@ui-lib.com',
     password: 'dummyPass',
