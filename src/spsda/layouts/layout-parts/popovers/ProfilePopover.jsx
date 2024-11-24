@@ -12,9 +12,8 @@ import FlexBox from '@/components/flexbox/FlexBox';
 import AvatarLoading from '@/components/avatar-loading';
 import { H6, Paragraph, Small } from '@/components/typography'; // CUSTOM DEFINED HOOK
 
-import useAuth from '@/hooks/useAuth'; // CUSTOM UTILS METHOD
-
 import { isDark } from '@/utils/constants'; // STYLED COMPONENTS
+import useStorage from '@/spsda/hooks/useStorage'
 
 const StyledButtonBase = styled(ButtonBase)(({
   theme
@@ -41,14 +40,18 @@ export default function ProfilePopover() {
   const anchorRef = useRef(null);
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
-  const {
-    logout
-  } = useAuth();
 
-  const handleMenuItem = path => () => {
-    navigate(path);
-    setOpen(false);
-  };
+  const logout = () => {
+    useStorage().reset()
+    navigate('/login')
+  }
+
+  // const handleMenuItem = path => () => {
+  //   navigate(path);
+  //   setOpen(false);
+  // };
+
+  const user = useStorage().get()
 
   return <Fragment>
       <StyledButtonBase ref={anchorRef} onClick={() => setOpen(true)}>
@@ -65,14 +68,14 @@ export default function ProfilePopover() {
       }} />
 
             <div>
-              <H6 fontSize={14}>Aaron Cooper</H6>
+              <H6 fontSize={14}>{`${user?.first_name} ${user?.last_name}`}</H6>
               <Small color="text.secondary" display="block">
-                aaron@example.com
+                {user?.email}
               </Small>
             </div>
           </FlexBox>}>
         <Box pt={1}>
-          <StyledSmall onClick={handleMenuItem('/demo/dashboard/profile')}>Set Status</StyledSmall>
+          {/* <StyledSmall onClick={handleMenuItem('/demo/dashboard/profile')}>Set Status</StyledSmall>
 
           <StyledSmall onClick={handleMenuItem('/demo/dashboard/profile')}>
             Profile & Account
@@ -84,7 +87,7 @@ export default function ProfilePopover() {
 
           <Divider sx={{
           my: 1
-        }} />
+        }} /> */}
 
           <StyledSmall onClick={logout}>Sign Out</StyledSmall>
         </Box>

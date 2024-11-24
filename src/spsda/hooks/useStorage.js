@@ -1,4 +1,4 @@
-const storageStr = `{"id": null, "firs_tname": null, "last_name": null, "token": null, "group_id": null, "role": null}`
+const storageStr = `{"id": null, "firs_tname": null, "last_name": null, "email": null, "token": null, "role": null}`
 const appKey = 'spsda'
 
 const useStorage = () => {
