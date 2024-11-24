@@ -13,13 +13,21 @@ import styled from '@mui/material/styles/styled'; // MUI ICON COMPONENT
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff'; // CUSTOM DEFINED HOOK
 
-import useAuth from '@/hooks/useAuth'; // CUSTOM LAYOUT COMPONENT
-
 import Layout from './Layout'; // CUSTOM COMPONENTS
 
 import Link from '@/components/link';
 import { H5, H6, Paragraph } from '@/components/typography';
 import { FlexBetween, FlexBox } from '@/components/flexbox'; // CUSTOM ICON COMPONENTS
+
+const signIn = (email, password) => {
+
+  return new Promise((resolve, reject) => {
+
+    resolve({email, password})
+
+  })
+
+}
 
 const StyledButton = styled(ButtonBase)(({
   theme
@@ -30,39 +38,33 @@ const StyledButton = styled(ButtonBase)(({
 }));
 export default function LoginPageView() {
   const [showPassword, setShowPassword] = useState(false);
-  const {
-    signInWithEmail,
-    signInWithGoogle
-  } = useAuth();
 
   const initialValues = {
-    email: 'jason@ui-lib.com',
-    password: 'dummyPass',
+    email: '',
+    password: '',
     remember: true
   };
-  const validationSchema = Yup.object().shape({
-    email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
-    password: Yup.string().min(6, 'Password should be of minimum 6 characters length').required('Password is required')
-  });
+
   const {
     errors,
     values,
-    touched,
     isSubmitting,
     handleBlur,
     handleChange,
-    handleSubmit
+    handleSubmit,
+    setErrors,
   } = useFormik({
     initialValues,
-    validationSchema,
-    onSubmit: async values => {
+    onSubmit: async (values) => {
+
       try {
-        await signInWithEmail(values.email, values.password);
+        const response = await signIn(values.email, values.password);
       } catch (error) {
         console.log(error);
       }
     }
   });
+
   return <Layout login>
       <Box maxWidth={550} p={4}>
         <H5 fontSize={{
@@ -77,11 +79,11 @@ export default function LoginPageView() {
                 Login with your email id
               </H6>
 
-              <TextField fullWidth placeholder="Enter your work email" name="email" onBlur={handleBlur} value={values.email} onChange={handleChange} helperText={touched.email && errors.email} error={Boolean(touched.email && errors.email)} />
+              <TextField fullWidth placeholder="Enter your work email" name="email" onBlur={handleBlur} value={values.email} onChange={handleChange} helperText={errors.email} error={Boolean(errors.email)} />
             </Grid>
 
             <Grid size={12}>
-              <TextField fullWidth placeholder="Password" type={showPassword ? 'text' : 'password'} name="password" onBlur={handleBlur} value={values.password} onChange={handleChange} helperText={touched.password && errors.password} error={Boolean(touched.password && errors.password)} slotProps={{
+              <TextField fullWidth placeholder="Password" type={showPassword ? 'text' : 'password'} name="password" onBlur={handleBlur} value={values.password} onChange={handleChange} helperText={errors.password} error={Boolean(errors.password)} slotProps={{
               input: {
                 endAdornment: <ButtonBase disableRipple disableTouchRipple onClick={() => setShowPassword(!showPassword)}>
                         {showPassword ? <VisibilityOff fontSize="small" /> : <Visibility fontSize="small" />}
