@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'; // MUI
 
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
-import Divider from '@mui/material/Divider';
+// import Divider from '@mui/material/Divider';
 import ButtonBase from '@mui/material/ButtonBase';
 import styled from '@mui/material/styles/styled'; // CUSTOM COMPONENTS
 
@@ -55,14 +55,14 @@ export default function ProfilePopover() {
 
   return <Fragment>
       <StyledButtonBase ref={anchorRef} onClick={() => setOpen(true)}>
-        <AvatarLoading alt="user" percentage={60} src="/static/user/user-11.png" sx={{
+        <AvatarLoading alt="user" percentage={100} src="/static/user/avatar.png" sx={{
         width: 35,
         height: 35
       }} />
       </StyledButtonBase>
 
       <PopoverLayout hiddenViewButton maxWidth={230} minWidth={200} popoverOpen={open} anchorRef={anchorRef} popoverClose={() => setOpen(false)} title={<FlexBox alignItems="center" gap={1}>
-            <Avatar src="/static/user/user-11.png" sx={{
+            <Avatar src="/static/user/avatar.png" sx={{
         width: 35,
         height: 35
       }} />

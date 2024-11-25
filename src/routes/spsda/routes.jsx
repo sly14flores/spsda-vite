@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 import Loadable from '@/routes/Loadable';
 
-import RenderOutlet from '@/spsda/pages/outlet-renderer';
+// import RenderOutlet from '@/spsda/pages/outlet-renderer';
 import { GuestGuard, AuthGuard } from '@/spsda/components/auth';
 import LayoutV1 from '@/spsda/layouts/layout-1';
 const Login = Loadable(lazy(() => import('@/spsda/pages/login')));
@@ -28,12 +28,12 @@ const approutes = [
     },
     {
         element: <AuthGuard><ActiveLayout /></AuthGuard>,
-        children: [    
+        children: [
             {
                 path: 'dashboard',
                 element: <Dashboard />
             }
-        ]        
+        ]       
     }
 ]
 

@@ -123,7 +123,7 @@ export default function LoginPageView() {
             </Grid>
 
             <Grid size={12}>
-              <LoadingButton loading={login.isSubmitting} type="submit" variant="contained" fullWidth>
+              <LoadingButton loading={isSubmitting} type="submit" variant="contained" fullWidth>
                 Sign In
               </LoadingButton>
             </Grid>
