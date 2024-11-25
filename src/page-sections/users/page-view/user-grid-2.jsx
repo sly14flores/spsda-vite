@@ -47,7 +47,7 @@ export default function UserGrid2PageView() {
           borderTopRightRadius: 0,
           borderBottomRightRadius: 0
         }}>
-            <SearchArea value={searchValue} onChange={e => setSearchValue(e.target.value)} gridRoute="/dashboard/user-grid-2" listRoute="/dashboard/user-list-2" />
+            <SearchArea value={searchValue} onChange={e => setSearchValue(e.target.value)} gridRoute="/demo/dashboard/user-grid-2" listRoute="/demo/dashboard/user-list-2" />
 
             <Grid container spacing={3}>
               {paginate(page, userPerPage, filteredUsers).map((item, index) => <Grid size={{

@@ -7,6 +7,7 @@ import LayoutV1 from '@/spsda/layouts/layout-1';
 const Login = Loadable(lazy(() => import('@/spsda/pages/login')));
 const ForgetPassword = Loadable(lazy(() => import('@/spsda/pages/forgot-password')));
 const Dashboard = Loadable(lazy(() => import('@/spsda/pages/dashboard')));
+const Teachers = Loadable(lazy(() => import('@/spsda/pages/teachers')));
 
 const ActiveLayout = () => {
     return <LayoutV1 />;
@@ -32,7 +33,11 @@ const approutes = [
             {
                 path: 'dashboard',
                 element: <Dashboard />
-            }
+            },
+            {
+                path: 'teachers',
+                element: <Teachers />
+            },            
         ]       
     }
 ]

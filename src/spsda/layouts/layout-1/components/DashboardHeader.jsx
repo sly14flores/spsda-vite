@@ -15,7 +15,7 @@ import Search from '@/icons/duotone/Search';
 
 import useLayout from '@/spsda/layouts/layout-1/context/useLayout'; // CUSTOM COMPONENTS
 
-import SearchBar from '@/spsda/layouts/layout-parts/SearchBar';
+// import SearchBar from '@/spsda/layouts/layout-parts/SearchBar';
 import ProfilePopover from '@/spsda/layouts/layout-parts/popovers/ProfilePopover';
 // import ServicePopover from '@/spsda/layouts/layout-parts/popovers/ServicePopover';
 // import LanguagePopover from '@/spsda/layouts/layout-parts/popovers/LanguagePopover';
@@ -58,7 +58,7 @@ export default function DashboardHeader() {
         {
         /* SEARCH ICON BUTTON */
       }
-        <ClickAwayListener onClickAway={() => setSearchBar(false)}>
+        {/* <ClickAwayListener onClickAway={() => setSearchBar(false)}>
           <div>
             {!openSearchBar ? <IconButton onClick={() => setSearchBar(true)}>
                 <Search sx={{
@@ -69,7 +69,7 @@ export default function DashboardHeader() {
 
             <SearchBar open={openSearchBar} handleClose={() => setSearchBar(false)} />
           </div>
-        </ClickAwayListener>
+        </ClickAwayListener> */}
 
         <Box flexGrow={1} ml={1} />
 
